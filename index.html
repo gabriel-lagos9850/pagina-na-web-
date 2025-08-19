@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Quiz da Evolução Digital</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <h1>Bem-vindo ao Quiz da Evolução Digital!</h1>
+            <p>Teste seus conhecimentos sobre a história da computação. Pressione "Iniciar" para começar.</p>
+            <button class="btn-proximo" data-proximo="1">Iniciar</button>
+        </div>
 
+        <div class="passo" id="passo-1">
+            <h2>Qual foi o primeiro computador totalmente eletrônico e programável, criado em 1946?</h2>
+            <button class="btn-proximo" data-proximo="2">ENIAC</button>
+            <button class="btn-proximo" data-proximo="error">UNIVAC</button>
+            <button class="btn-proximo" data-proximo="error">Colossus</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <h2>Qual das seguintes empresas foi co-fundada por Bill Gates e Paul Allen?</h2>
+            <button class="btn-proximo" data-proximo="error">Apple</button>
+            <button class="btn-proximo" data-proximo="3">Microsoft</button>
+            <button class="btn-proximo" data-proximo="error">IBM</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <h2>Quem é considerado o "pai da computação" por seu trabalho na Máquina de Turing?</h2>
+            <button class="btn-proximo" data-proximo="4">Alan Turing</button>
+            <button class="btn-proximo" data-proximo="error">Steve Jobs</button>
+            <button class="btn-proximo" data-proximo="error">Charles Babbage</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <h2 class="titulo-final">Parabéns, você completou o Quiz!</h2>
+            <p>Você demonstrou um grande conhecimento sobre a história da tecnologia. A sua pontuação é de 3/3.</p>
+        </div>
+
+        <div class="passo" id="error">
+            <h2 class="titulo-final">Resposta Incorreta!</h2>
+            <p>Puxa, você errou! Tente novamente para melhorar sua pontuação.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
+        </div>
+    </main>
+    <script src="script-quiz.js"></script>
+</body>
+</html>
